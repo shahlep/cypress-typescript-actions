@@ -18,15 +18,15 @@ declare namespace Cypress{
 }
 
 Cypress.Commands.add('login',(username, password)=>{
-    cy.get('#user_login').type('username')
-    cy.get('#user_password').type('password')
+    cy.get('#user_login').type(username)
+    cy.get('#user_password').type(password)
     cy.contains('Sign in').click()
 })
 
 Cypress.Commands.add('feedback',(name,email,subject,description)=>{
-    cy.get('#name').type('name')
-    cy.get('#email').type('email')
-    cy.get('#subject').type('subject')
-    cy.get('#comment').type('description')
+    cy.get('#name').type(name)
+    cy.get('#email').type(email)
+    cy.get('#subject').type(subject)
+    cy.get('#comment').type(description)
     cy.contains('Send Message').click()
 })
