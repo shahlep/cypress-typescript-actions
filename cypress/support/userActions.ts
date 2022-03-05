@@ -23,6 +23,10 @@ Cypress.Commands.add('login',(username, password)=>{
     cy.contains('Sign in').click()
 })
 
-Cypress.Commands.add('feedback',()=>{
-    
+Cypress.Commands.add('feedback',(name,email,subject,description)=>{
+    cy.get('#name').type('name')
+    cy.get('#email').type('email')
+    cy.get('#subject').type('subject')
+    cy.get('#comment').type('description')
+    cy.contains('Send Message').click()
 })
