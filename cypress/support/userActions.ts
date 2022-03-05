@@ -7,3 +7,7 @@ declare namespace Cypress{
         login(username: String, password: String): Chainable<Element>
     }
 }
+
+Cypress.Commands.add('login',(username, password)=>{
+
+})
