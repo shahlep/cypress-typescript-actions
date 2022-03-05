@@ -7,6 +7,9 @@ describe('test for all is configured correctly', () => {
   })
   it('feedback test', () => {
     cy.visitFeedbackpage()
-    cy.feedback('test','test@example.com','text subject', 'des---crip---tion')  
+    //cy.feedback('test','test@example.com','text subject', 'des---crip---tion')
+    cy.fixture('feedback').then(({name,email,subject,description})=>{
+        cy.feedback(name,email,subject,description)
+    })  
   })
 })
