@@ -5,4 +5,8 @@ describe('test for all is configured correctly', () => {
     cy.visitLoginpage()
     cy.login('username','password')
   })
+  it('feedback test', () => {
+    cy.visitFeedbackpage()
+    cy.feedback('test','test@example.com','text subject', 'des---crip---tion')  
+  })
 })
