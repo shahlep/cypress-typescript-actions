@@ -13,7 +13,7 @@ declare namespace Cypress{
          * @param subject - takes the subject of the feedback
          * @param description - takes the description of the feedback
          */
-        feedback( name:String, email:String, subject:String, description:String)
+        feedback( name:String, email:String, subject:String, description:String): Chainable<Element>
     }
 }
 
