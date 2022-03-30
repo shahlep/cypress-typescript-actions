@@ -1,7 +1,7 @@
 name: Cypress Tests
 on: [push]
 jobs:
-    cypress-run:
+  cypress-run:
     runs on: ubuntu-latest
     - name: Checkout
       uses: actions/checkout@v2
