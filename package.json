@@ -4,7 +4,9 @@
   "description": "Cypress Automation using typescript",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run"
+    "test": "cypress run --browser chrome",
+    "fun": "cypress run --browser firefox",
+    "cy:mobile": "cypress run --config viewportWidth=375,viewportHeight=670"
   },
   "repository": {
     "type": "git",
